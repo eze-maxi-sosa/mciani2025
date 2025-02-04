@@ -9926,8 +9926,8 @@ h4, h5, h6 {
 }
 .logomaxii_android1 {
     background: #e7dbcb;
-    width: -100px; /* Ajusta el ancho */
-    height: -100px; /* Ajusta la altura */
+    width: -1000px; /* Ajusta el ancho */
+    height: -1000px; /* Ajusta la altura */
     object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
 }
 
