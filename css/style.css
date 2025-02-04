@@ -9924,6 +9924,13 @@ h4, h5, h6 {
     max-width: 1000%; /* Asegura que no se exceda el contenedor */
     object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
 }
+.logomaxii_android1 {
+    background: #e7dbcb;
+    width: 300px; /* Ajusta el ancho */
+    height: 131px; /* Ajusta la altura */
+    max-width: 1000%; /* Asegura que no se exceda el contenedor */
+    object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+}
 
 
 
