@@ -9924,6 +9924,7 @@ h4, h5, h6 {
     height: 231px; /* Ajusta la altura */
     max-width: 1000%; /* Asegura que no se exceda el contenedor */
     object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+    margin-left: 20px;
 }
 
 
