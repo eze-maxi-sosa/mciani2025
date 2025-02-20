@@ -24,6 +24,51 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* El modal */
+        .modal {
+            display: none; /* Inicialmente oculto */
+            position: fixed;
+            z-index: 1; /* Por encima de otros contenidos */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        /* Contenido del modal */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 0;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            position: absolute; /* Cambiar de margin a posicionamiento absoluto */
+            top: 50%; /* Coloca el modal en el centro vertical */
+            left: 50%; /* Coloca el modal en el centro horizontal */
+            transform: translate(-50%, -50%); /* Ajusta para que el centro del modal esté en el centro de la pantalla */
+        }
+
+
+        /* Botón de cerrar */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
 </head>
 
 <body>
@@ -76,10 +121,10 @@
                 <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
                     <!--<a href="index.html" class="navbar-brand d-block d-lg-none">
                         <h1 class="m-0 display-4 text-primary text-uppercase">Justice</h1>
-                     </a>
+                     </a>-->
                     <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <img src="img/Digitales_ColorVertical.png" alt=Logo" class="logomaxii_android1">
-                    </a>-->
+                        <img src="img/Digitales_ColorVertical.png" alt=Logo" class="logomaxii_android">
+                    </a>
 
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -108,9 +153,9 @@
                     <img class="position-absolute w-100 h-100" src="img/carousel-1.png" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">La mejor agencia de abogados</h4>
-                            <h3 class="display-2 text-capitalize text-white mb-4">Nuestra lucha es por nuestra justicia.</h3>
-                            <!--<a class="btn btn-primary py-3 px-5 mt-2" href="#">Obtenga una cita</a>-->
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Resultados que usted merece</h4>
+                            <!--<h3 class="display-2 text-capitalize text-white mb-4">Nuestra lucha es por nuestra justicia.</h3>
+                            <a class="btn btn-primary py-3 px-5 mt-2" href="#">Obtenga una cita</a>-->
                         </div>
                     </div>
                 </div>
@@ -119,7 +164,47 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Resultados que usted merece</h4>
-                            <h3 class="display-2 text-capitalize text-white mb-4">Nos preparamos para oponernos por ti.</h3>
+                            <!--<h3 class="display-2 text-capitalize text-white mb-4">Nos preparamos para oponernos por ti.</h3>
+                            <!--<a class="btn btn-primary py-3 px-5 mt-2" href="#">Llámanos ahora</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-3.png" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Resultados que usted merece</h4>
+                            <!--<h3 class="display-2 text-capitalize text-white mb-4">Nos preparamos para oponernos por ti.</h3>
+                            <!--<a class="btn btn-primary py-3 px-5 mt-2" href="#">Llámanos ahora</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-4.png" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Resultados que usted merece</h4>
+                            <!--<h3 class="display-2 text-capitalize text-white mb-4">Nos preparamos para oponernos por ti.</h3>
+                            <!--<a class="btn btn-primary py-3 px-5 mt-2" href="#">Llámanos ahora</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-5.png" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                           <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Resultados que usted merece</h4>
+                            <!--<h3 class="display-2 text-capitalize text-white mb-4">Nos preparamos para oponernos por ti.</h3>
+                            <!--<a class="btn btn-primary py-3 px-5 mt-2" href="#">Llámanos ahora</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-6.png" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Resultados que usted merece</h4>
+                            <!--<h3 class="display-2 text-capitalize text-white mb-4">Nos preparamos para oponernos por ti.</h3>
                             <!--<a class="btn btn-primary py-3 px-5 mt-2" href="#">Llámanos ahora</a>-->
                         </div>
                     </div>
@@ -148,87 +233,107 @@
                 <div class="col-lg-7 mt-4 mt-lg-0">
                     <!--<h2 class="position-relative text-center bg-white text-primary rounded p-3 mt-4 mb-4 d-none d-lg-block" style="width: 350px; margin-left: -100px;"></h2>-->
                     <h6 class="text-uppercase">Conócenos</h6>
-                    <h1 class="mb-4">Brindamos Servicios Legales Confiables y Eficaces</h1>
+
+                    <!--<h1 class="mb-4">Brindamos Servicios Legales Confiables y Eficaces</h1>-->
+                    <h1 class="mb-4" style="text-align: justify;">Brindamos un servicio legal confiable y personalizado.</h1>
+
                     <p>
                         Somos un equipo con una clara impronta de resolver conflictos. Nos especializamos en ofrecer soluciones personalizadas para cada caso, garantizando un servicio confiable, comprometido y transparente en la defensa de los derechos de nuestros patrocinados.
-                        Para eso brindamos asesoramiento integral a través de múltiples áreas de práctica y, en ocasiones, generamos contactos multidisciplinarios para responder de forma innovadora y creativa a desafíos complejos.
+                        Para eso brindamos asesoramiento integral a través de múltiples áreas de práctica y, en ocasiones, generamos contactos interdisciplinarios para responder de forma innovadora y creativa a desafíos complejos.
                         ¿Qué ofrecemos? Cubrimos todas las áreas necesarias para una gestión exitosa en la resolución del conflicto de nuestros clientes, tanto en épocas de prosperidad y crecimiento como en tiempos difíciles y de redefinición.
                         Y, sobre todo, ponemos el acento en las personas, conscientes de que un gran servicio es mucho más que una recomendación acertada.
                     </p>
+
                     <!--<a href="" class="btn btn-primary mt-2">Saber Más</a>-->
                 </div>
             </div>
         </div>
     </div>
     <!-- Fin Sobre Nosotros -->
-   <!-- Inicio de Servicios -->
-<div class="container-fluid py-5" id="service">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-3">
-                <h6 class="text-uppercase">Nuestras Especialidades</h6>
-                <h1 class="mb-4">Áreas de Práctica</h1>
-                <p>Ofrecemos asesoramiento y representación en diversas áreas del derecho, brindando soluciones legales eficaces y personalizadas para cada cliente.</p>
-                <!--<a href="" class="btn btn-primary mt-2">Más Servicios</a>-->
-            </div>
-            <div class="col-lg-9 pt-5 pt-lg-0">
-                <div class="bg-primary rounded" style="height: 200px;"></div>
-                <div class="owl-carousel service-carousel position-relative" style="margin-top: -100px; padding: 0 30px;">
-                    <!-- 1 -->
-                    <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                        <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                            <i class="fa fa-2x fa-users"></i> <!-- <i class="fa fa-2x fa-users"></i> -->
+    <!-- Inicio de Servicios -->
+    <div class="container-fluid py-5" id="service">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h6 class="text-uppercase">Nuestras Especialidades</h6>
+                    <h1 class="mb-4">Áreas de Práctica</h1>
+                    <p>Ofrecemos asesoramiento y representación en diversas áreas del derecho, brindando soluciones legales eficaces y personalizadas para cada cliente.</p>
+                </div>
+                <div class="col-lg-9 pt-5 pt-lg-0">
+                    <div class="bg-primary rounded" style="height: 200px;"></div>
+                    <div class="owl-carousel service-carousel position-relative" style="margin-top: -100px; padding: 0 30px;">
+                        <!-- 1 -->
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
+                                <i class="fa fa-2x fa-users"></i>
+                            </div>
+                            <h5 class="mb-4 px-4">Derechos de las Familias - NNA:</h5>
+                            <p>
+                                Trabajamos con la convicción de que, muchas veces, la conciliación es lo indicado para los conflictos familiares. Ahora bien, a veces es necesario litigar sin más.
+                            </p>
+                            <button class="read-more-btn" onclick="openModal('masTexto1', 'Derechos de las Familias - NNA', 'Trabajamos con la convicción de que, muchas veces, la conciliación es lo indicado para los conflictos familiares. Ahora bien, a veces es necesario litigar sin más.Y en esta área, hay límites éticos que no cruzamos: no asesoramos/patrocinamos a quien busca infundadamente obstruir el vínculo de un NNA con su progenitor, a progenitores sobre cómo evadir el pago de una cuota de alimentos, a quienes realizan falsas denuncias de violencia.')">Leer más</button>
                         </div>
-                        <h5 class="mb-4 px-4">Derecho de las familias - Derecho de los niños, niñas y adolescentes.</h5> <!-- titulo -->
-                        <p class="m-0">Asesoramos en contratos, responsabilidad civil, propiedad, herencias y todo tipo de asuntos civiles para proteger sus derechos.</p>
-                    </div>
-                    <!-- 2 -->
-                    <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                        <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                            <i class="fa fa-2x fa-landmark"></i>   <!-- <i class="fa fa-2x fa-landmark"></i> -->
+
+                        <!-- 2 -->
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
+                                <i class="fa fa-2x fa-landmark"></i>
+                            </div>
+                            <h5 class="mb-4 px-4">Derecho sucesorio.</h5>
+                            <p>
+                                Acompañamos desde el asesoramiento respecto de la planificación del patrimonio a través del testamento.
+                            </p>
+                            <button class="read-more-btn" onclick="openModal('masTexto2', 'Derecho sucesorio', 'Acompañamos desde el asesoramiento respecto de la planificación del patrimonio a través del testamento. Realizamos sucesiones, facilitando la resolución legal de patrimonios familiares. Protegemos tus derechos como heredero de manera eficaz. ')">Leer más</button>
                         </div>
-                        <h5 class="mb-4 px-4">Derecho sucesorio.</h5> <!-- titulo -->
-                        <p class="m-0">Brindamos apoyo legal en divorcios, custodia de hijos, adopciones y sucesiones, garantizando soluciones justas y humanas.</p>
-                    </div>
-                    <!-- 3 -->
-                    <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                        <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                            <i class="fa fa-2x fa-venus-mars"></i>
+
+                        <!-- 3 -->
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
+                                <i class="fa fa-2x fa-plus"></i>
+                            </div>
+                            <h5 class="mb-4 px-4">Amparos de salud y Derechos reproductivos.</h5>
+                            <p>
+                                Opciones legales, innovadoras y seguras en busca de la transformación y reconocimiento
+                            </p>
+                            <button class="read-more-btn" onclick="openModal('masTexto3', 'Amparos de salud y Derechos reproductivos', 'Opciones legales, innovadoras y seguras en busca de la transformación y reconocimiento extrajudicial y judicial de los derechos de la salud y los derechos reproductivos. ')">Leer más</button>
                         </div>
-                        <h5 class="mb-4 px-4">Derechos reproductivos.</h5> <!-- titulo -->
-                        <p class="m-0">Asesoramos a empresas en contratos, litigios comerciales, constitución de sociedades y cumplimiento normativo.</p>
-                    </div>
-                    <!-- 4 -->
-                    <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                        <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                            <i class="fa fa-2x fa-hand-holding-usd"></i> <!-- <i class="fa fa-2x fa-hand-holding-usd"></i> -->
+
+                        <!-- 4 -->
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
+                                <i class="fa fa-2x fa-hand-holding-usd"></i>
+                            </div>
+                            <h5 class="mb-4 px-4">Defensa del consumidor.</h5>
+                            <p>
+                                Actuaciones ante superintendencia de riesgos de trabajo. Distintos trámites derivados de: rechazo de la denuncia de la contingencia,
+                            </p>
+                            <button class="read-more-btn" onclick="openModal('masTexto4', 'Defensa del consumidor', 'Asesoramiento legal y representación en toda clase de procedimientos administrativos y judiciales bajo la Ley de Protección al Consumidor, tales como publicidad engañosa, responsabilidad por productos y reemplazos de productos defectuosos, etiquetado de productos y condiciones de comercialización, entre otros.')">Leer más</button>
                         </div>
-                        <h5 class="mb-4 px-4">Defensa del consumidor.</h5> <!-- titulo -->
-                        <p class="m-0">Defendemos sus derechos en procesos penales, ofreciendo representación en delitos económicos, violencia y otros casos penales.</p>
-                    </div>
-                    <!-- 5 -->
-                    <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                        <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                            <i class="fa fa-2x fa-plus"></i>
+                        <!--  -->
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
+                                <i class="fa fa-2x fa-briefcase"></i>
+                            </div>
+                            <h5 class="mb-4 px-4">Actuaciones antes superintendencia de riesgos de trabajo.</h5>
+                            <p>
+                                Distintos trámites derivados de: rechazo de la denuncia de la contingencia,
+                            </p>
+                            <button class="read-more-btn" onclick="openModal('masTexto5', 'Actuaciones antes superintendencia de riesgos de trabajo', 'Distintos trámites derivados de: rechazo de la denuncia de la contingencia, rechazo de enfermedades no listadas, silencio de la art, divergencia en el alta/ prestaciones, reingreso al tratamiento, divergencia en la determinación de la incapacidad, entre otros.')">Leer más</button>
                         </div>
-                        <h5 class="mb-4 px-4">Amparos en materia de salud.</h5> <!-- titulo -->
-                        <p class="m-0">Defendemos sus derechos en procesos penales, ofreciendo representación en delitos económicos, violencia y otros casos penales.</p>
                     </div>
-                    <!-- 6 -->
-                    <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                        <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                            <i class="fa fa-2x fa-gavel"></i>
-                        </div>
-                        <h5 class="mb-4 px-4">Actuaciones ante superintendencia de riesgo de trabajo.</h5> <!-- titulo -->
-                        <p class="m-0">Defendemos sus derechos en procesos penales, ofreciendo representación en delitos económicos, violencia y otros casos penales.</p>
-                    </div>
-                    <!-- mas -->
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Fin de Servicios -->
+    <!-- Modal (popup) -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h5 id="modalTitle"></h5>
+            <p id="modalText"></p>
+        </div>
+    </div>
+    <!-- Fin de Servicios -->
     <!-- Inicio de Citas
     <div class="container-fluid py-5">
         <div class="container py-5">
@@ -340,7 +445,7 @@
     </div>
     <!-- Acción Fin -->
     <!-- Equipo Inicio -->
-    <div class="container-fluid py-5"id="team">
+    <div class="container-fluid py-5" id="team">
         <div class="container py-5">
             <div class="text-center pb-2">
                 <h6 class="text-uppercase">Nuestros Abogados</h6>
@@ -416,7 +521,7 @@
         </div>
     </div>
     <!-- Equipo Fin -->
-    <!-- Testimonios Inicio 
+    <!-- Testimonios Inicio
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center pb-5">
@@ -556,30 +661,30 @@
                 </div>
             </div>
 
-         
-                    <!-- Boletín de Noticias -->
-                    <div class="col-lg-3 col-md-6 mb-5">
-                        <h4 class="font-weight-semi-bold text-primary mb-4">Boletín de Noticias</h4>
-                        <p>Brindamos soluciones rápidas y eficaces para tus necesidades legales, asegurando resultados confiables.</p>
-                        <div class="w-100">
-                            <div class="input-group">
-                                <!--<input type="text" class="form-control border-0" style="padding: 25px;" placeholder="Tu Correo Electrónico">-->
-                            </div>
-                        </div>
+
+            <!-- Boletín de Noticias -->
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">Boletín de Noticias</h4>
+                <p>Brindamos soluciones rápidas y eficaces para tus necesidades legales, asegurando resultados confiables.</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <!--<input type="text" class="form-control border-0" style="padding: 25px;" placeholder="Tu Correo Electrónico">-->
                     </div>
                 </div>
+            </div>
+        </div>
 
-    <div class="row p-4 mt-5 mx-0" style="background: rgba(256, 256, 256, .05);">
-        <!-- Derechos de Autor -->
-                        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                            <p class="m-0 text-white">&copy; <a class="font-weight-bold" href="#">Nombre de Tu Sitio</a>. Todos los Derechos Reservados.</p>
-                        </div>
+        <div class="row p-4 mt-5 mx-0" style="background: rgba(256, 256, 256, .05);">
+            <!-- Derechos de Autor -->
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">&copy; <a class="font-weight-bold" href="#">Nombre de Tu Sitio</a>. Todos los Derechos Reservados.</p>
+            </div>
 
-                        <!-- Créditos -->
-                        <div class="col-md-6 text-center text-md-right">
-                            <p class="m-0 text-white">Diseñado por <a class="font-weight-bold" href="#">Ezequiel Maximiliano Sosa</a></p>
-                        </div>
-                    </div>
+            <!-- Créditos -->
+            <div class="col-md-6 text-center text-md-right">
+                <p class="m-0 text-white">Diseñado por <a class="font-weight-bold" href="#">Ezequiel Maximiliano Sosa</a></p>
+            </div>
+        </div>
     </div>
     <!-- Footer End -->
     <!-- Back to Top -->
@@ -601,6 +706,39 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+    <script>
+        // Función para abrir el modal
+        function openModal(id, title, text) {
+            var modal = document.getElementById("myModal");
+            var modalTitle = document.getElementById("modalTitle");
+            var modalText = document.getElementById("modalText");
+
+            // Colocar el título y el texto
+            modalTitle.textContent = title;
+            modalText.innerHTML = text;
+
+            // Muestra el modal
+            modal.style.display = "block";
+        }
+
+        // Función para cerrar el modal
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
+        // Cierra el modal si el usuario hace clic fuera del contenido del modal
+        window.onclick = function (event) {
+            var modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
 
 </body>
 </html>
